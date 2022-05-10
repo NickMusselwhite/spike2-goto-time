@@ -1,0 +1,12 @@
+'Goto
+var view%,spike_time%;
+
+
+View% := View();
+
+FrontView(view%);
+Draw(Input("Spike Time", XLow(), 0, MaxTime()));
+
+'View(view%);
+FrontView(view%);
+
