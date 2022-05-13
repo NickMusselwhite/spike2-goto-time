@@ -1,12 +1,14 @@
-'Goto
+'Goto a specific spike time while working with waveform data
 var view%,spike_time%;
 
-
+'Get view handle of current view and set as the front view
 View% := View();
-
 FrontView(view%);
+
+'Ask user for desired time and update window width
 Draw(Input("Spike Time", XLow(), 0, MaxTime()));
 
-'View(view%);
+'This sets the prior selected view back to the front for some reason without this
+'Spike2 sets focut to the script window
 FrontView(view%);
 
